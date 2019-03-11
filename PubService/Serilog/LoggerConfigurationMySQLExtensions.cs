@@ -1,0 +1,59 @@
+﻿// Copyright 2017 Zethian Inc.
+// 
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+// 
+//     http://www.apache.org/licenses/LICENSE-2.0
+// 
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
+using System;
+using Serilog.Configuration;
+using Serilog.Debugging;
+using Serilog.Events;
+using Serilog.Sinks.MySQL;
+
+namespace Serilog
+{
+    /// <summary>
+    ///     Adds the WriteTo.MySQL() extension method to <see cref="LoggerConfiguration" />.
+    /// </summary>
+    public static class LoggerConfigurationMySqlExtensions
+    {
+        /// <summary>
+        ///     Adds a sink that writes log events to a MySQL database.
+        /// </summary>
+        /// <param name="loggerConfiguration">The logger configuration.</param>
+        /// <param name="connectionString">The connection string to MySQL database.</param>
+        /// <param name="tableName">The name of the MySQL table to store log.</param>
+        /// <param name="restrictedToMinimumLevel">The minimum log event level required in order to write an event to the sink.</param>
+        /// <param name="storeTimestampInUtc">Store timestamp in UTC format</param>
+        /// <param name="batchSize">Number of log messages to be sent as batch. Supported range is between 1 and 1000</param>
+
+        /// <exception cref="ArgumentNullException">A required parameter is null.</exception>
+        public static LoggerConfiguration MySQL(
+            this LoggerSinkConfiguration loggerConfiguration,
+            LogEventLevel restrictedToMinimumLevel = LevelAlias.Minimum)
+        {
+            if (loggerConfiguration == null)
+                throw new ArgumentNullException(nameof(loggerConfiguration));
+
+            try
+            {
+                return loggerConfiguration.Sink(
+                    new MySqlSink(),
+                    restrictedToMinimumLevel);
+            }
+            catch (Exception ex)
+            {
+                SelfLog.WriteLine(ex.Message);
+                throw;
+            }
+        }
+    }
+}

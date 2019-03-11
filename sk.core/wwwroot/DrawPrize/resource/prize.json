@@ -1,0 +1,151 @@
+﻿[
+  {
+    "Name": "5元优惠券",
+    "Code": "#Coupon5",
+    "Ratio": 900000,
+    "Value": "1",
+    "Unit": "张",
+    "Counter": 99999999,
+    "Icon": "resource/prize2/5元优惠券.png",
+    "Status": 1,
+    "IsDefult": true,
+    "IsCouponRatio": true,
+    "IsCoupon": true,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/01 23:59:59",
+        "MaxNum": 99999999
+      }
+    ],
+    "Param": { "CouponId": 516 }
+  },
+  {
+    "Name": "10元优惠券",
+    "Code": "#Coupon10",
+    "Ratio": 10000,
+    "Value": "1",
+    "Unit": "张",
+    "Counter": 99999999,
+    "Icon": "resource/prize2/10元优惠券.png",
+    "IsCoupon": true,
+    "Status": 1,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/01 23:59:59",
+        "MaxNum": 99999999
+      }
+    ],
+    "Param": { "CouponId": 517 }
+  },
+  {
+    "Name": "3000积分",
+    "Code": "#Score3000",
+    "Ratio": 10000,
+    "Value": "1",
+    "Unit": "份",
+    "Counter": 99999999,
+    "Icon": "resource/prize2/3000积分.png",
+    "Status": 1,
+    "IsDefult": true,
+    "IsCouponRatio": true,
+    "IsScore": true,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/11 23:59:59",
+        "MaxNum": 99999999
+      }
+    ]
+  },
+  {
+    "Name": "五常大米20元优惠券",
+    "Code": "#Coupon20",
+    "Ratio": 10000,
+    "Value": "1",
+    "Unit": "张",
+    "Counter": 99999999,
+    "Icon": "resource/prize2/五常大米20元优惠券.png",
+    "Status": 1,
+    "IsDefult": true,
+    "IsCouponRatio": true,
+    "IsCoupon": true,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/11 23:59:59",
+        "MaxNum": 99999999
+      }
+    ],
+    "Param": { "CouponId": 517 }
+  },
+  {
+    "Name": "V卡6折购",
+    "Code": "#Prize104",
+    "Ratio": 99999999,
+    "Value": "1",
+    "Unit": "张",
+    "Counter": 30,
+    "Icon": "resource/prize2/V卡6折购.png",
+    "Status": 1,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/11 23:59:59",
+        "MaxNum": 99999999
+      }
+    ]
+  },
+  {
+    "Name": "蜂蜜柚子茶",
+    "Code": "#Prize103",
+    "Ratio": 10000,
+    "Value": "1",
+    "Unit": "瓶",
+    "Counter": 10,
+    "Icon": "resource/prize2/蜂蜜柚子茶.png",
+    "Status": 1,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/11 23:59:59",
+        "MaxNum": 10
+      }
+    ]
+  },
+  {
+    "Name": "免单券",
+    "Code": "#Prize102",
+    "Ratio": 10000,
+    "Value": "1",
+    "Unit": "张",
+    "Counter": 5,
+    "Icon": "resource/prize2/免单券.png",
+    "Status": 1,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/11 23:59:59",
+        "MaxNum": 5
+      }
+    ]
+  },
+  {
+    "Name": "东陵面包机",
+    "Code": "#Prize101",
+    "Ratio": 10000,
+    "Value": "1",
+    "Unit": "个",
+    "Counter": 1,
+    "Icon": "resource/prize2/东陵面包机.png",
+    "Status": 1,
+    "TimeList": [
+      {
+        "StartTime": "2018/07/11 00:00:00",
+        "EndTime": "2018/11/11 23:59:59",
+        "MaxNum": 1
+      }
+    ]
+  }
+]

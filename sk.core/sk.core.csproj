@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\netcoreapp2.1\sk.core.xml</DocumentationFile>
+    <OutputPath>bin\Debug\netcoreapp2.1\netcoreapp2.1</OutputPath>
+    <NoWarn>1701;1702;1705;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\DefaultController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ActivityService\ActivityService.csproj" />
+    <ProjectReference Include="..\Command\Command.csproj" />
+    <ProjectReference Include="..\MbcCommand\MbcService.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\OrderService\OrderService.csproj" />
+    <ProjectReference Include="..\ProductService\ProductService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\DrawPrize\libs\modules\egret\egret.min.js" />
+    <None Include="wwwroot\DrawPrize\libs\modules\egret\egret.web.min.js" />
+    <None Include="wwwroot\DrawPrize\libs\modules\eui\eui.min.js" />
+    <None Include="wwwroot\DrawPrize\libs\modules\game\game.min.js" />
+    <None Include="wwwroot\DrawPrize\libs\modules\game\game.web.min.js" />
+    <None Include="wwwroot\DrawPrize\libs\modules\res\res.min.js" />
+    <None Include="wwwroot\DrawPrize\libs\modules\tween\tween.min.js" />
+    <None Include="wwwroot\DrawPrize\resource\app.appcache" />
+    <None Include="wwwroot\DrawPrize\resource\prize.js" />
+    <None Include="wwwroot\DrawPrize\resource\prize2\prize2.rar" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

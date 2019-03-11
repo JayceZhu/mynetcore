@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LoadAddressDetail.cs" />
+    <Compile Remove="LoadAddressList.cs" />
+    <Compile Remove="SaveAddress.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Command\Command.csproj" />
+    <ProjectReference Include="..\Model\Model.csproj" />
+    <ProjectReference Include="..\OrderService\OrderService.csproj" />
+    <ProjectReference Include="..\PubService\PubService.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,10 @@
+{
+  "autoGenerateExmlsList": true,
+  "exmls": [
+    {
+      "path": "resource/eui_skins/GamePlayingSkin.exml",
+      "content": "<?xml version='1.0' encoding='utf-8'?>\n<e:Skin class=\"GamePlayingSkin\" width=\"900\" height=\"900\" xmlns:e=\"http://ns.egret.com/eui\" xmlns:w=\"http://ns.egret.com/wing\">\n\t<e:Image id=\"panel\" y=\"0\"  horizontalCenter=\"-1.5\" width=\"0\" height=\"0\" x=\"0\"/>\n</e:Skin>"
+    }
+  ],
+  "skins": {}
+}

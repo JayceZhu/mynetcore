@@ -1,0 +1,10 @@
+﻿dotnet ef dbcontext scaffold "Server=192.168.0.101;User Id=root;Password=123456;Database=sk_act"  "Pomelo.EntityFrameworkCore.MySql" -o "./Data" -c "CoreContext" -v -f
+
+public static string ConnnectString { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseMySql(ConnnectString);
+            }
+        }
